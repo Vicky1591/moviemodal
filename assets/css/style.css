@@ -1,0 +1,60 @@
+/* body{ */
+	/* background : red; */
+
+
+/*specipicity = (no of ID selector, no of Class selector, no of Tag selector);*/
+
+
+
+
+.backDrop{
+	background-color : rgba(0,0,0,0.6);
+	position : fixed;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100vh;
+	animation : fade-in 0.3s ease-in-out forward;
+
+}
+
+.myModal{
+	width : 60%;
+	padding : 15px;
+	left : 20%;
+	top : 25%;
+	position  :fixed;
+	background-color : white;
+	border-radius : 5px;
+	animation : fade-slide-down 0.5s ease-in-out forwards;
+}
+
+.myModal-content h3 .myClose {				
+	float : right;
+	cursor : pointer;
+}
+
+
+@keyframes fade-slide-down{
+	
+	from {
+		transform: translateY(-5rem);
+		opacity : 0;
+		
+	}
+	
+	to{
+		transform: translateY(0);
+		opacity : 1;
+		
+	}
+}
+
+@keyframes fade-in{
+	from{
+		opacity : 0;
+	}
+	to{
+		opacity : 1;
+	}
+}

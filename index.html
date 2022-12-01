@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Movie Modal </title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	
+
+
+  </head>
+  <body>
+	
+	
+	<header class="bg-primary p-4 mb-4">			<!-- bg for Background primary for blue color of header..>
+											<!-- when element gets full width that is conatiner-fluid..-->
+		
+		    <div class="container-fluid">
+			
+			<div class="row align-items-center">
+	
+				<div class="col-6">
+	
+					<h1 class="text-white"> Movie Gallary </h1>
+
+				</div>
+	
+	
+				<div class="col-6 text-right">							<!--- text-right for shifting div to right side---->
+	
+					<button class="btn btn-success" id="showModal">Add Movie</button>     <!-- success means green color to button -->
+	
+				</div>
+			
+			</div>
+		</div>
+		
+	</header>
+	
+	<div class="container">
+		<div class="row" id="movieInfo">
+			<!-- <div class="col-md-4"> -->
+			<!-- <div class="card"> -->
+			<!-- <div class="card-body"> -->
+			<!-- <figure> -->
+				<!-- <h3> Movie Title </h3> -->
+				<!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTt2b3ODIQCWvj_Dava87kXkaYrLcEz5jtLg&usqp=CAU" alt=""> -->
+				
+				<!-- <figcaption> -->
+				<!-- <p>5/5</p> -->
+				<!-- </figcaption> -->
+				
+			<!-- <figure> -->
+			<!-- </div> -->
+			<!-- </div> -->
+			
+			<!-- </div> -->
+		</div>
+	</div>
+	
+	
+	
+	<!-- position fixed elements -->
+	
+	<div id="backDrop"  class="backDrop d-none"> </div>     
+	
+	<div id="myModal" class="myModal d-none">
+	
+		<div class="myModal-content">
+			<h3>Add Movie Info <i class="fa-solid fa-xmark myClose"></i></h3>
+			
+			<form id="movieForm">
+			<div class="form-group">
+			
+			<label for="title">Title</label> 
+			<input type="text" id="title" class="form-control" required>
+			
+			</div>
+			
+			<div class="form-group">
+			
+			<label for="imgUrl">ImgUrl</label> 
+			<input type="text" id="imgUrl" class="form-control" required>
+			
+			</div>
+			
+			<div class="form-group"> 
+			
+			<label for="rating">Rating</label> 
+			<input type="number"  id="rating" class="form-control" required>
+			
+			</div>
+			
+			<div class="form-group text-right">
+			
+			<button class="btn btn-primary" type="submit"> Add Movie </button>
+			
+			<button class="btn btn-danger myClose" type="button"> Cancel</button>
+			
+			
+			</div>
+			</form>
+		
+		</div>
+	
+	
+	
+	</div>
+	
+	<script src="./assets/js/app.js"></script>
+	
+	
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+<!--for used in label line no 65 is for when we press to title on browser then it will automatically goes in input..-->
+<!--Backdrop is for background screen...@ line no 50-->
